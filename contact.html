@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work With Me — Misha Fitness</title>
+  <meta name="description" content="Get in touch with Misha — FEA Certified Fitness Instructor. Start your fat loss, strength or online coaching journey today."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,700;1,300;1,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="pl-inner">
+      <div class="pl-name">Misha<span>.</span></div>
+      <div class="pl-sub">Fitness & Coaching</div>
+      <div class="pl-bar"><div class="pl-fill"></div></div>
+    </div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-logo">Misha<span>.</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nm">Home</a></li>
+        <li><a href="coaching.html" class="nm">Coaching</a></li>
+        <li><a href="about.html" class="nm">About</a></li>
+        <li><a href="contact.html" class="nm active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Work With Me</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero short-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <h1 class="ph-h1 reveal-up">Let's work<br/><em>together.</em></h1>
+      <p class="ph-sub reveal-up d1">Fill in the form below or reach out on Instagram. I'll be in touch within 24 hours to discuss your goals and find the right programme for you.</p>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="cg-form reveal-up">
+          <h2 class="sec-title">Tell me about<br/><em>your goals.</em></h2>
+          <p class="cg-intro">The more you share, the better I can help. Fill in as much as you're comfortable with.</p>
+
+          <form class="the-form" id="contactForm" novalidate>
+            <div class="form-row-2">
+              <div class="fgroup">
+                <label for="f-name">Your Name *</label>
+                <input type="text" id="f-name" placeholder="Your name" required/>
+                <span class="ferr" id="nameErr"></span>
+              </div>
+              <div class="fgroup">
+                <label for="f-age">Age (optional)</label>
+                <input type="text" id="f-age" placeholder="e.g. 28"/>
+              </div>
+            </div>
+            <div class="fgroup">
+              <label for="f-email">Email Address *</label>
+              <input type="email" id="f-email" placeholder="you@email.com" required/>
+              <span class="ferr" id="emailErr"></span>
+            </div>
+            <div class="fgroup">
+              <label for="f-insta">Instagram Handle (optional)</label>
+              <input type="text" id="f-insta" placeholder="@yourusername"/>
+            </div>
+            <div class="fgroup">
+              <label for="f-goal">Your Main Goal *</label>
+              <select id="f-goal" required>
+                <option value="">Select your goal...</option>
+                <option>Fat Loss</option>
+                <option>Build Muscle & Strength</option>
+                <option>Improve Overall Fitness</option>
+                <option>Healthy Lifestyle Coaching</option>
+                <option>Nutrition Guidance</option>
+                <option>Online Coaching</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label for="f-level">Current Fitness Level</label>
+              <select id="f-level">
+                <option value="">Select...</option>
+                <option>Complete Beginner</option>
+                <option>Some Experience</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label for="f-location">Your Country / Location</label>
+              <input type="text" id="f-location" placeholder="e.g. Malaysia, Singapore, UK..."/>
+            </div>
+            <div class="fgroup">
+              <label for="f-msg">Tell me more about what you want to achieve *</label>
+              <textarea id="f-msg" rows="5" placeholder="What's your goal? What have you tried before? What's holding you back? Anything you share helps me help you better..." required></textarea>
+              <span class="ferr" id="msgErr"></span>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="submitBtn">
+              <span id="btnTxt">Send Message</span>
+              <span id="btnLoad" style="display:none">Sending...</span>
+            </button>
+            <div class="form-success" id="formSuccess" style="display:none">
+              <div class="fs-icon">✓</div>
+              <h3>Message received!</h3>
+              <p>Thank you for reaching out! I'll be in touch within 24 hours. Your transformation journey starts right now. 💪</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="cg-info reveal-right">
+
+          <div class="ci-prefer">
+            <h3>Prefer Instagram?</h3>
+            <p>Send me a DM — I'm always active and happy to chat about your goals.</p>
+            <a href="https://www.instagram.com/misha_fitness_official" target="_blank" class="btn-insta-full">
+              <svg viewBox="0 0 24 24" fill="none" width="20"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              Message on Instagram
+            </a>
+          </div>
+
+          <div class="ci-block">
+            <div class="ci-label">Based In</div>
+            <p class="ci-main">📍 Malaysia<br/>🌏 Coaching clients worldwide online</p>
+          </div>
+
+          <div class="ci-block">
+            <div class="ci-label">Response Time</div>
+            <p class="ci-main">I aim to reply to all messages within <strong>24 hours</strong>. You can also reach me faster via Instagram DM.</p>
+          </div>
+
+          <div class="ci-block">
+            <div class="ci-label">Programmes Available</div>
+            <div class="ci-progs">
+              <div class="cip-item">🔥 Fat Loss Programme</div>
+              <div class="cip-item">💪 Strength Training</div>
+              <div class="cip-item">💻 Online Coaching</div>
+              <div class="cip-item">🥗 Nutrition Guidance</div>
+              <div class="cip-item">🧘‍♀️ Healthy Lifestyle</div>
+              <div class="cip-item">🎯 Custom Programme</div>
+            </div>
+          </div>
+
+          <div class="ci-block">
+            <div class="ci-label">Good to Know</div>
+            <div class="ci-facts">
+              <div class="cif-item">✓ FEA Certified Instructor</div>
+              <div class="cif-item">✓ All fitness levels welcome</div>
+              <div class="cif-item">✓ Online coaching available globally</div>
+              <div class="cif-item">✓ 100% personalised plans</div>
+              <div class="cif-item">✓ Regular check-ins included</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="fg-brand">
+          <div class="fg-logo">Misha<span>.</span></div>
+          <p>FEA Certified Fitness Instructor helping people across Malaysia and worldwide achieve fat loss, strength and a healthy lifestyle they love.</p>
+          <a href="https://www.instagram.com/misha_fitness_official" target="_blank" class="fg-insta">
+            <svg viewBox="0 0 24 24" fill="none" width="16"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            @misha_fitness_official
+          </a>
+        </div>
+        <div class="fg-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="coaching.html">Coaching</a></li>
+            <li><a href="about.html">About Misha</a></li>
+            <li><a href="contact.html">Contact & Book</a></li>
+          </ul>
+        </div>
+        <div class="fg-col">
+          <h4>Programmes</h4>
+          <ul>
+            <li><a href="coaching.html">Fat Loss Programme</a></li>
+            <li><a href="coaching.html">Strength Training</a></li>
+            <li><a href="coaching.html">Online Coaching</a></li>
+            <li><a href="coaching.html">Nutrition Guidance</a></li>
+          </ul>
+        </div>
+        <div class="fg-col">
+          <h4>Follow Along</h4>
+          <p>Join 7,400+ people following Misha's fitness journey on Instagram for daily tips, workouts and motivation.</p>
+          <a href="https://www.instagram.com/misha_fitness_official" target="_blank" class="btn-insta" style="margin-top:16px">
+            <svg viewBox="0 0 24 24" fill="none" width="16"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            @misha_fitness_official
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Misha Fitness · FEA Certified · Malaysia</span>
+        <span>Available for online coaching worldwide 🌏</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
